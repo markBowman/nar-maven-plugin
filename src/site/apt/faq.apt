@@ -64,6 +64,17 @@ public class ... {
 }
 +--
 
+	[I want to use the NAR plugin to create a JNI type library for multiple platforms (Windows, MacOSX and Linux).
+	How do I do?]
+	First of all, you have to generate .nar packages from each platform. Jenkins is highly recommended in this case.
+Secondly, {{{https://github.com/scijava/native-lib-loader}native-lib-loader}} should be specified as a
+<dependency> in your pom file. Then, NAR plugin needs to be configured to generate a NarSystem class by specifying
+a <narSystemPackage>, which will create a JNI interface with help of NarSystem class. After compiling the native codes,
+NAR plugin generates a <nar> package which contains machine-specific native libraries.
+In order to use <nar> packages, please make sure that the packages are included in your classpath.
+The NAR plugin loads appropriate machine-specific native library when you launch the JNI-based java application.
+
+
 
 
 	
