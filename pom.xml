@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
+
   <parent>
-    <artifactId>lcogt-pom</artifactId>
-    <groupId>org.lcogt</groupId>
-    <version>0.3.0</version>
+    <artifactId>maven-plugins</artifactId>
+    <groupId>org.apache.maven.plugins</groupId>
+    <version>25</version>
+    <relativePath />
   </parent>
 
   <groupId>com.github.maven-nar</groupId>
@@ -43,9 +44,10 @@
   </mailingLists>
 
   <scm>
-    <connection>scm:svn:http://versionsba/svn/telsoft/thirdparty/apache/maven-nar-plugin/branches/2.1-x</connection>
-    <developerConnection>scm:svn:http://versionsba/svn/telsoft/thirdparty/apache/maven-nar-plugin/branches/2.1-x</developerConnection>
-    <url>http://versionsba/svn/telsoft/thirdparty/apache/maven-nar-plugin/branches/2.1-x</url>
+    <connection>scm:git:git://github.com/maven-nar/nar-maven-plugin</connection>
+    <developerConnection>scm:git:git@github.com:maven-nar/nar-maven-plugin</developerConnection>
+    <url>https://github.com/maven-nar/nar-maven-plugin</url>
+    <tag>HEAD</tag>
   </scm>
 
   <ciManagement>
